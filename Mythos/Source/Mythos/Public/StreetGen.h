@@ -16,8 +16,13 @@ class MYTHOS_API UStreetGen : public UBlueprintFunctionLibrary
 	
 public:
 
-	/** Please add a function description */
+	/** Duplicate the contents of given array to a new array sorted by the Y coordinate */
 	UFUNCTION(BlueprintCallable, BlueprintPure)
 	static void SortByY(UPARAM(ref) TArray<FVector>& ArrayToSort, TArray<FVector>& OutputArray);
+
+
+	///** Please add a function description */
+	//UFUNCTION(BlueprintCallable, BlueprintPure)
+	//static void InsertIntoQueue(UPARAM(ref) TArray<FVector>& Queue, TArray<FVector>& OutputArray);
 
 };
